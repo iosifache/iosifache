@@ -1,0 +1,22 @@
+name: Update README.md
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+      - name: Run GitPortfolio
+        uses: iosifache/gitportfolio@main
+        with:
+          config: ./config.yaml
+          pat: ${{ secrets.pat }}
+          datasources: ./custom_datasources
+          template: ./TEMPLATE.md
+          output: ./README.md
