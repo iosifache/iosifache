@@ -1,0 +1,7 @@
+# Python Caches
+**/__pycache__
+**/.mypy_cache
+
+# GitPortfolio cache
+/cache/*
+!/cache/.gitkeep
