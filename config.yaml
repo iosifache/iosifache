@@ -212,6 +212,12 @@ repos:
     owner: iosifache
     tags:
     - security
+  awesome-ubuntu-appsec:
+    owner: iosifache
+    shown: true
+    tags:
+    - security
+    - awesome
   awesome-web-security:
     owner: iosifache
     tags:
@@ -228,6 +234,12 @@ repos:
   cookiecutter-minimal-python:
     owner: iosifache
     tags:
+    - development
+  cppcheck-snap:
+    owner: iosifache
+    shown: true
+    tags:
+    - security
     - development
   cs_pub_ro_templates:
     owner: iosifache
@@ -346,6 +358,12 @@ repos:
     tags:
     - security
     - masters
+  rubocop-snap:
+    owner: iosifache
+    shown: true
+    tags:
+    - security
+    - development
   scrapy-testing:
     owner: iosifache
     tags:
